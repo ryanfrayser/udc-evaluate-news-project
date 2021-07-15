@@ -15,3 +15,8 @@ import './styles/header.scss'
 // console.log(handleSubmit)
 
 // alert("i exist")
+
+export {
+    checkForName,
+    handleSubmit
+}
