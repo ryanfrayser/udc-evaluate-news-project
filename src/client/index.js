@@ -11,7 +11,7 @@ import './styles/form.scss'
 import './styles/header.scss'
 
 
-console.log(checkForName);
-console.log(handleSubmit)
+// console.log(checkForName);
+// console.log(handleSubmit)
 
-alert("i exist")
+// alert("i exist")

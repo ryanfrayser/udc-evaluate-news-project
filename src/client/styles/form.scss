@@ -9,4 +9,16 @@ input {
     width: 100%;
     line-height: 16px;
     margin: 10px 0;
+  }
+
+  .button {
+    background-color: rgb(52, 52, 63);
+    color: white;
+
+    &:hover {
+        background-color: white;
+        color: black;
+
+    }
 }
+
