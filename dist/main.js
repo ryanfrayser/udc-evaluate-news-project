@@ -580,6 +580,9 @@ function checkForName(inputText) {
     if(names.includes(inputText)) {
         alert("Welcome, Captain!")
     }
+    else {
+        alert("Sorry, who are you?")
+    }
 }
 
 ;// CONCATENATED MODULE: ./src/client/js/formHandler.js
