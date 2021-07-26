@@ -1,6 +1,6 @@
 
 // Import JS Files
-import { checkForName } from './js/nameChecker'
+import { runAPI} from './js/runURL'
 import { handleSubmit } from './js/formHandler'
 
 // Import SCSS Styles
@@ -17,6 +17,6 @@ import './styles/header.scss'
 // alert("i exist")
 
 export {
-    checkForName,
+    runAPI,
     handleSubmit
 }

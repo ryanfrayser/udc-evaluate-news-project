@@ -562,37 +562,40 @@ __webpack_require__.r(__webpack_exports__);
 
 // EXPORTS
 __webpack_require__.d(__webpack_exports__, {
-  "checkForName": () => (/* reexport */ checkForName),
-  "handleSubmit": () => (/* reexport */ handleSubmit)
+  "handleSubmit": () => (/* reexport */ handleSubmit),
+  "runAPI": () => (/* reexport */ runAPI)
 });
 
-;// CONCATENATED MODULE: ./src/client/js/nameChecker.js
-function checkForName(inputText) {
-    console.log("::: Running checkForName :::", inputText);
-    let names = [
-        "Picard",
-        "Janeway",
-        "Kirk",
-        "Archer",
-        "Georgiou"
-    ]
+;// CONCATENATED MODULE: ./src/client/js/runURL.js
+// export function checkForName(inputText) {
+//     console.log("::: Running checkForName :::", inputText);
+//     let names = [
+//         "Picard",
+//         "Janeway",
+//         "Kirk",
+//         "Archer",
+//         "Georgiou"
+//     ]
 
-    if(names.includes(inputText)) {
-        alert("Welcome, Captain!")
-    }
-    else {
-        alert("Sorry, who are you?")
-    }
+//     if(names.includes(inputText)) {
+//         alert("Welcome, Captain!")
+//     }
+//     else {
+//         alert("Sorry, who are you?")
+//     }
+// }
+
+function runAPI (inputText) {
+    console.log("Run API Reached", inputText)
 }
-
 ;// CONCATENATED MODULE: ./src/client/js/formHandler.js
 function handleSubmit(event) {
     event.preventDefault()
 
     // check what text was put into the form field
-    let formText = document.getElementById('name').value
+    let formText = document.getElementById('website').value
 
-    Client.checkForName(formText)
+    Client.runAPI(formText)
 
     console.log("::: Form Submitted :::")
     fetch('http://localhost:8081/test')
