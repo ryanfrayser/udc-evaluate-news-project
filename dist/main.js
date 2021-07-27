@@ -570,28 +570,6 @@ __webpack_require__.d(__webpack_exports__, {
 function runAPI (inputText) {
     console.log("Run API Reached", inputText)
 
-
-console.log("process.env.API_KEY")
-
-    const formdata = new FormData();
-formdata.append("key", "process.env.API_KEY");
-formdata.append("url", "inputText");
-formdata.append("lang", "en");  // 2-letter code, like en es fr ...
-
-
-const requestOptions = {
-  method: 'POST',
-  body: formdata,
-  redirect: 'follow'
-};
-
-const response = fetch("https://api.meaningcloud.com/sentiment-2.1", requestOptions)
-  .then(response => ({
-    status: response.status,
-    body: response.json()
-  }))
-  .then(({ status, body }) => console.log(status, body))
-  .catch(error => console.log('error', error));
 }
 ;// CONCATENATED MODULE: ./src/client/js/formHandler.js
 function handleSubmit(event) {
