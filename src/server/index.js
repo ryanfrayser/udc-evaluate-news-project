@@ -34,15 +34,17 @@ app.listen(8081, function () {
 
 
 //Meaningcloud API Call
+dotenv.config();
 const apiKey = process.env.API_KEY;
 
+
 app.post ('/meaning', async (req,res) => {
-    console.log (req.body)
+    console.log (req.body.formText);
 
      const response = await axios.get(`https://api.meaningcloud.com/sentiment-2.1?key=${apiKey}&of=json&url=${req.body.formText}&lang=en`);
 
     try {
-        const data = await response.json()
+        const data = await response.data;
 
         console.log(data);
         res.send(data);

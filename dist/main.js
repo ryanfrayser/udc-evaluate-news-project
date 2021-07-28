@@ -2351,9 +2351,6 @@ function handleSubmit(event) {
 
     axios.post('/meaning', {formText})
 
-    .then (function(res) {res.json();
-    })
-
     .then (function(res) {
         document.getElementById('results').innerHTML = res.agreement;
     })

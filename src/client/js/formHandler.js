@@ -12,8 +12,8 @@ export function handleSubmit(event) {
     console.log("::: Valid URL -> Form Submitted :::")
 
     axios.post('/meaning', {formText})
-
-    .then (function(res) {res.json();
+    .then (function(res) {
+        console.log(res)
     })
 
     .then (function(res) {
