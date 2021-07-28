@@ -12,11 +12,8 @@ export function handleSubmit(event) {
     console.log("::: Valid URL -> Form Submitted :::")
 
     axios.post('/meaning', {formText})
-    .then (function(res) {
-        console.log(res)
-    })
 
     .then (function(res) {
-        document.getElementById('results').innerHTML = res.agreement;
+        document.getElementById('results').innerHTML = `Confidence: ${res.data.confidence}`;
     })
 }

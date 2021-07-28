@@ -45,8 +45,6 @@ app.post ('/meaning', async (req,res) => {
 
     try {
         const data = await response.data;
-
-        console.log(data);
         res.send(data);
     }
     catch(error){
