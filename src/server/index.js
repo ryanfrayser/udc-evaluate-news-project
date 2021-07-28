@@ -2,7 +2,7 @@
 var path = require('path')
 const express = require('express')
 const dotenv = require('dotenv')
-const mockAPIResponse = require('./meaningcloudAPI.js')
+const mockAPIResponse = require('./mockAPI.js')
 const axios = require('axios').default;
 
 //Express Setup
@@ -39,23 +39,21 @@ const apiKey = process.env.API_KEY;
 app.post ('/meaning', async (req,res) => {
     console.log (req.body)
 
-    const response = await axios.get(`https://api.meaningcloud.com/sentiment-2.1?key=${apiKey}&of=json&url=${req.body.formText}&lang=en`);
+     const response = await axios.get(`https://api.meaningcloud.com/sentiment-2.1?key=${apiKey}&of=json&url=${req.body.formText}&lang=en`);
 
     try {
-        const data = await response.json();
+        const data = await response.json()
 
         console.log(data);
         res.send(data);
     }
     catch(error){
-        console.log("API with API Request::::", error)
+        console.log("Problem with API Request::::", error)
     };
-
-
-//Test Mock API from Starter code
-app.get('/test', function (req, res) {
-    res.send(mockAPIResponse)
 })
 
 
-
+// //Test Mock API from Starter code
+// app.get('/test', function (req, res) {
+//     res.send(mockAPIResponse)
+// })

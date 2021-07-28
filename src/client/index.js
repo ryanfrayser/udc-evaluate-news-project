@@ -1,6 +1,6 @@
 
 // Import JS Files
-import { runAPI} from './js/runURL'
+import { runAPI} from './js/checkURL'
 import { handleSubmit } from './js/formHandler'
 
 // Import SCSS Styles
