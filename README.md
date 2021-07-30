@@ -25,11 +25,11 @@ Wikipedia offers the following definition:
 The students will use an API called MeaningCloud to determine various attributes of an article or blog post.
 
 
-##Setup
+## Setup
 
 This project utilizes NPM for package management, webpack for compiling,  and a backend Express/Node app for making the API Call. 
 
-###To Start
+### To Start
 `npm install` to install neccessary dependencies. 
 
 To start Express server simply run 
@@ -39,17 +39,17 @@ To build a production ready project that creates the distribution folder run:
 `npm run build-prod`
 
 
-###Development
+### Development
 
 To run a hot-reload project using webpack integrated dev server, run:
 `npm run build-dev`
 
 - the project will be hosted on ** http://localhost:3030 **
 
-##Testing Using Jest
+## Testing Using Jest
 
 
-#Credit
+## Credit
 
 This project utilizes Udacity Starter Code, and concepts learned in the Front End Nanodegree Program. 
 
