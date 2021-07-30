@@ -6,8 +6,8 @@ export function handleSubmit(event) {
     // check what text was put into the form field
     let formText = document.getElementById('website').value
 
-    //Check for valid URL
-    Client.validURL(formText)
+//Check for valid URL, if valid run the API
+   if(Client.validURL(formText)){
 
     console.log("::: Valid URL -> Form Submitted :::")
 
@@ -20,4 +20,12 @@ export function handleSubmit(event) {
         document.getElementById('subjectivity').innerHTML = `Subjectivity: ${res.data.subjectivity}`;
         document.getElementById('irony').innerHTML = `Irony: ${res.data.irony}`;
     })
+}
+
+//If not a valid URL, alert the user.
+
+else {
+    console.log("Invalid URL Entered")
+    alert ('Please enter a valid URL to examine')
+}
 }

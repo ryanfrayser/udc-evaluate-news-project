@@ -3,9 +3,6 @@
 import { validURL} from './js/checkURL'
 import { handleSubmit } from './js/formHandler'
 
-//import Asset
-import img from './assets/github.png'
-
 // Import SCSS Styles
 import './styles/resets.scss'
 import './styles/base.scss'
@@ -21,6 +18,5 @@ import './styles/header.scss'
 
 export {
     validURL,
-    handleSubmit,
-    img
+    handleSubmit
 }
