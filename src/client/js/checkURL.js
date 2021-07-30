@@ -1,4 +1,4 @@
-export function runAPI (inputText) {
-    console.log("Run API Reached", inputText)
+export function validURL (inputText) {
+    console.log("Checking URL:", inputText)
 
 }

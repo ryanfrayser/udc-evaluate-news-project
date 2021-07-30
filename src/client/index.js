@@ -1,6 +1,6 @@
 
 // Import JS Files
-import { runAPI} from './js/checkURL'
+import { validURL} from './js/checkURL'
 import { handleSubmit } from './js/formHandler'
 
 // Import SCSS Styles
@@ -17,6 +17,6 @@ import './styles/header.scss'
 // alert("i exist")
 
 export {
-    runAPI,
+    validURL,
     handleSubmit
 }

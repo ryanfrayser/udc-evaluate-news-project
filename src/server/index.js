@@ -17,6 +17,10 @@ const bodyParser = require ('body-parser')
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(bodyParser.json());
 
+// designates what port the app will listen to for incoming requests
+app.listen(8081, function () {
+    console.log('Example app listening on port 8081!')
+})
 
 //Initialize bundled dist folder
 app.use(express.static('dist'))
@@ -27,10 +31,7 @@ app.get('/', function (req, res) {
     res.sendFile('dist/index.html')
 })
 
-// designates what port the app will listen to for incoming requests
-app.listen(8081, function () {
-    console.log('Example app listening on port 8081!')
-})
+
 
 
 //Meaningcloud API Call
