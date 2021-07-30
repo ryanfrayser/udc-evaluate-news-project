@@ -3,8 +3,8 @@
 ## Table of Contents
 
 * [Overview](#overview)
-* [Setup] (#setup)
-* [Credit] (#credit)
+* [Setup](#setup)
+* [Credit](#credit)
 
 ## Overview
 
@@ -30,23 +30,30 @@ The students will use an API called MeaningCloud to determine various attributes
 This project utilizes NPM for package management, webpack for compiling,  and a backend Express/Node app for making the API Call. 
 
 ### To Start
-`npm install` to install neccessary dependencies. 
+Install neccessary dependencies:
+`npm install`
 
-To start Express server simply run 
+To start Express server:
 `npm start`
 
-To build a production ready project that creates the distribution folder run:
+To build a production ready project that creates the distribution folder:
 `npm run build-prod`
 
+
+Nodemon is used for hot server reolad on the nodejs server.
 
 ### Development
 
 To run a hot-reload project using webpack integrated dev server, run:
 `npm run build-dev`
 
-- the project will be hosted on ** http://localhost:3030 **
+- the development project will be hosted on ** http://localhost:3030 **
 
 ## Testing Using Jest
+
+
+
+
 
 
 ## Credit
