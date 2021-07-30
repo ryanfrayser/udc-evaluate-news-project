@@ -5,7 +5,7 @@ import { validURL } from "../src/client/js/checkURL.js";
 
 describe ("testing if the URL is valid", () => {
 
-    test("testing the validURL() function", () => {
+    test("testing the regex function for a valid url", () => {
 
         expect(validURL).toBeDefined();
     })
